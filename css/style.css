@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+a {
+    text-decoration: none;
+    color: black; }
+
+ol {
+    list-style: none; }
+li{
+    list-style: none; }
+
+ul {
+    list-style: none; }
+
+html {
+    font-size: 62.5%;
+    }
+
+.headerImg  img {
+    width: 10rem;
+    height: 10rem;
+}
+.headerH1 h1 {
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Island Moments' ;
+    letter-spacing: 2rem;
+}
+
+.formulario img {
+    width: 5rem;
+    margin-right: 2rem;
+    
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    padding-right: 2rem;
+    padding-left: 2rem ;
+}
+.formulario input {
+    width: 30rem ;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    
+}
+.iniciar {
+    padding-top: 1rem;
+    padding-bottom:1rem;
+}
+
+.iniciar button{
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    border: 1.5px black solid;
+}
+
+.carrusel-item  {
+    min-width: 100%;
+    height: 73.1rem;
+}
+.carrusel-items{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.carrusel-item  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
