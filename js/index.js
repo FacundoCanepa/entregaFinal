@@ -91,7 +91,16 @@ const start = () => {
 start();
 
 const mainDivForm = document.createElement ("div")
+mainDivForm.id = "divForm"
 mainDivForm.style.alignSelf = ` center` ; 
+const mainDivFormWard = document.createElement ("p")
+mainDivFormWard.id = "parrafo";
+mainDivFormWard.className = "parrafo";
+mainDivFormWard.style.textAlign = "center";
+mainDivFormWard.style.fontSize = "1.6rem";
+mainDivFormWard.style.flexWrap = "wrap";
+mainDivFormWard.style.fontWeight = "600"
+mainDivFormWard.style.fontFamily = "'Quattrocento Sans', sans-serif"
 
 const mainForm = document.createElement ("div")
 mainForm.style.position = "Absolute"
@@ -132,10 +141,12 @@ mainForm2.innerHTML = `
     </label>
 `;
 
-mainIndex.append(carruselDiv)
 
+mainIndex.append(carruselDiv)
+mainForm2.append(mainDivFormWard)
 mainDivForm.append(mainForm)
 mainDivForm.append(mainForm2)
+
 
 
 mainIndex.append(mainDivForm)
@@ -143,3 +154,4 @@ mainIndex.append(mainDivForm)
 
 bodyIndex.prepend(mainIndex)
 bodyIndex.prepend(headerIndex)
+
