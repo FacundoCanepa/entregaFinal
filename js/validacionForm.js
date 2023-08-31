@@ -4,6 +4,11 @@ inicioSesion.addEventListener("submit" , e=>{
     let validarEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ 
     let validarTelefono = /^((\+549|\+54 9|549) (221| 11 ) (\d{3}) (\d{4}))|((\+549|549)(221| 11)(\d{7}))|((221| 11)(\d{7}))$/
     let entrar = false 
+    const usuarios = {
+        usermane : username.value ,
+        gmail : gmail.value ,
+        telefono : telefono.value
+    }
     if(username.value.length <6 ){
         warnings += "El nombre es icorrecto <br>"
         entrar = true
@@ -23,7 +28,9 @@ inicioSesion.addEventListener("submit" , e=>{
         parrafo.innerHTML = warnings
     }
     else{
-        alert("iniciaste sesion")
+        const user = JSON.stringify(usuarios)
+        localStorage.setItem('usuario',user)
+        window.location.href = `./pages/carrito.html`;
     }
-
 })
+

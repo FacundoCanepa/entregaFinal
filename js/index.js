@@ -47,9 +47,6 @@ const imgCarrusel = [
 }
 ]
 
-
-
-
 const carruselDiv = document.createElement ("div")
 carruselDiv.className = "carrusel";
 carruselDiv.style.display = "flex";

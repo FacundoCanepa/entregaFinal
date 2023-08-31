@@ -79,7 +79,17 @@ html {
     object-fit: cover;
 
 }
-/* .parrafo {
-    font-family: 'Quattrocento Sans', sans-serif;
+.listItemCarrito img {
+    width:20rem;
+}
+li img {
+    width: 30rem;
+}
 
-} */
+.carrito img {
+    width: 20rem;
+}
+.carritoImg img {
+    width: 6.5rem;
+    height: 6.5rem;
+}
